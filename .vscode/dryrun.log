@@ -1,0 +1,12 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/tal/Desktop/Shared_Folders/Shared/b-ball'
+clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources --compile sources/Leauge.cpp -o objects/Leauge.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources --compile sources/TestRunner.cpp -o objects/TestRunner.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources --compile sources/Game.cpp -o objects/Game.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources --compile sources/Team.cpp -o objects/Team.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources --compile sources/Schedule.cpp -o objects/Schedule.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources --compile sources/main.cpp -o objects/main.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources --compile sources/Test.cpp -o objects/Test.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources objects/Leauge.o objects/TestRunner.o objects/Game.o objects/Team.o objects/Schedule.o objects/main.o objects/Test.o -o test
+make: Leaving directory '/home/tal/Desktop/Shared_Folders/Shared/b-ball'
+ 
